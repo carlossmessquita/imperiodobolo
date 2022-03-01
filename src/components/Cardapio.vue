@@ -1,7 +1,9 @@
 <template>
     <div class="container">
-        <iframe class="cardapio" src="https://drive.google.com/file/d/1kiPmW8zk-30FN-UNkLcijZTM0KcIOlvg/preview" width="350" height="480" allow="autoplay"></iframe>
+        <img src="img/valores.jpg" alt="" >           
+        <img src="img/kitfestaib.png" alt="" width="375" height="475">
     </div>
+    
 </template>
 <script>
 export default {
@@ -11,15 +13,28 @@ export default {
 <style scoped>
     .container {
         display: flex;
-        flex-direction: column;
+        justify-content: space-evenly;
         align-items: center;
         margin-top: 1%;
         margin-bottom: 1%;
     }
+
+    img {
+        width: 375px; 
+        height: 475px;
+    }
     @media only screen and (max-width: 600px) {
         .container {
+            
+            flex-direction: column;
             width: 250;
             height: 380;
+        }
+
+        img {
+            margin-bottom: 25px;
+            width: 250px;
+            height: 375px;
         }
     }
 </style>
